@@ -1,0 +1,17 @@
+<div>
+    <table class="data-table">
+        <thead ng-if="config.ShowHeaders">
+            <tr>
+                <th ng-repeat="header in config.Headers">{{ header }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in dataRows">
+                <td ng-repeat="cell in row">
+                    <input type="text" ng-model="cell.value">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button ng-if="config.ShowAddRowButton" ng-click="addRow()">Add Row</button>
+</div>

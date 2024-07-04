@@ -1,0 +1,23 @@
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.config-layout {
+    padding: 15px;
+    font-size: 14px;
+}
+
+.config-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 15px;
+    font-size: 14px;
+}
